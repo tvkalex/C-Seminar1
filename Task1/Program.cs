@@ -25,5 +25,5 @@ else
     System.Console.Write(num1);
 }
 
-//Решение в одну строчку. Вот к чему нужно стремиться ))
+//Решение в одну строчку. Вот к чему нужно стремиться ☺
 //Console.WriteLine(Console.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).Max());
