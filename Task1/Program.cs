@@ -6,9 +6,9 @@ a = -9 b = -3 -> max = -3
 */
 
 System.Console.WriteLine("Введите первое число: ");
-int num1 = int.Parse(System.Console.ReadLine()!);
+int num1 = int.Parse(System.Console.ReadLine()!); //Add ! as null forgiving to avoid mistake "Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL." [Ex002_HelloUser]csharp(CS8600)
 System.Console.WriteLine("Введите второе число: ");
-int num2 = int.Parse(System.Console.ReadLine()!);
+int num2 = int.Parse(System.Console.ReadLine()!); //Add ! as null forgiving to avoid mistake "Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL." [Ex002_HelloUser]csharp(CS8600)
 
 if (num1 > num2)
 {
@@ -24,3 +24,6 @@ else
     System.Console.Write(" больше первого числа ");
     System.Console.Write(num1);
 }
+
+//Решение в одну строчку. Вот к чему нужно стремиться ))
+//Console.WriteLine(Console.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).Max());
