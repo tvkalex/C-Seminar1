@@ -6,7 +6,7 @@
 7 -> нет
 */
 
-System.Console.WriteLine("Введите число для проверки на четность (ДА) / нечетность (НЕТ): ");
+System.Console.WriteLine("Введите число для проверки на четность(ДА)/нечетность(НЕТ): ");
 int num = int.Parse(System.Console.ReadLine()!);
 
 if (num % 2 == 0)
